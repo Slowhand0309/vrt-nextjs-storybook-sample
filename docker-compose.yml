@@ -1,0 +1,20 @@
+version: '3.3'
+volumes:
+  modules_data:
+    driver: local
+  next_data:
+    driver: local
+
+services:
+  vrt:
+    build: .
+    image: slowhand/vrt
+    container_name: "vrt"
+    volumes:
+      - .:/usr/src
+      - modules_data:/usr/src/node_modules
+      - next_data:/usr/src/.next
+    command: ash -c "yarn install && yarn dev"
+    ports:
+      - '3000:3000'
+    working_dir: /usr/src
