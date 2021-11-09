@@ -9,8 +9,12 @@
     }
   },
   "plugins": {
+    "reg-simple-keygen-plugin": {
+      "expectedKey": "...",
+      "actualKey": "..."
+    },
     "reg-publish-s3-plugin": {
-      "bucketName": ""
+      "bucketName": "$S3_BUCKET_NAME"
     }
   }
 }
