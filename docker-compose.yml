@@ -9,7 +9,7 @@ services:
   vrt:
     build: .
     image: slowhand/vrt
-    container_name: "vrt"
+    container_name: 'vrt'
     volumes:
       - .:/usr/src
       - modules_data:/usr/src/node_modules
@@ -17,4 +17,5 @@ services:
     command: ash -c "yarn install && yarn dev"
     ports:
       - '3000:3000'
+      - '6006:6006'
     working_dir: /usr/src

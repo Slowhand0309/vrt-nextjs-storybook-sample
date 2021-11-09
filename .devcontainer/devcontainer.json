@@ -1,7 +1,7 @@
 {
-  "name": "Next.js remote container dev",
+  "name": "VRT remote container dev",
   "dockerComposeFile": ["../docker-compose.yml"],
-  "service": "nextjs",
+  "service": "vrt",
   "workspaceFolder": "/usr/src",
   "extensions": [
     "formulahendry.auto-rename-tag",
