@@ -10,6 +10,9 @@ services:
     build: .
     image: slowhand/vrt
     container_name: 'vrt'
+    environment:
+      - PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+      - PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
     volumes:
       - .:/usr/src
       - modules_data:/usr/src/node_modules
