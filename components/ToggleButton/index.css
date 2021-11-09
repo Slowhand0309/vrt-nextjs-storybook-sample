@@ -1,0 +1,7 @@
+.toggle-button {
+  background-color: aliceblue;
+}
+
+.toggle-button:hover {
+  background-color: antiquewhite;
+}
